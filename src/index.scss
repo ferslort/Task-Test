@@ -1,0 +1,70 @@
+@import './scss/index.scss';
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif!important;
+}
+
+h1,h2,h3{
+  padding: 0!important;
+  margin: 0!important;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3.5rem;
+}
+h3{
+  font-size: 1.8rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.app {
+  height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(to left, #051937, #0b284d, #0f3964, #104a7c, #0d5c95);
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+  background-color: $background-light;
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 95vh;
+
+  
+}
+
+@media( min-width: 768px ){
+  .container{
+    width: 85%;
+    padding: 2.6rem;
+  }
+}
+
+@media(min-width:995px){
+  .container{
+    width: 65%;
+    padding: 4rem;
+  }
+}

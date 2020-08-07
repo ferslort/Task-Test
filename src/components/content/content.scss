@@ -1,0 +1,171 @@
+@import "../../scss/index.scss";
+
+.container-content {
+    position: relative;
+    .title {
+        text-align: center;
+    }
+    &__footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-bottom: 7rem;
+
+        button {
+            width: 80% !important;
+            height: 10%;
+            border-radius: 0.5rem;
+            position: fixed;
+            bottom: 2rem;
+        }
+    }
+}
+
+@media(min-width: 500px){
+    .container-content__footer{
+       
+        button {
+            width: 73% !important;
+            height: 10%;
+            border-radius: 0.5rem;
+            position: fixed;
+            bottom: 4rem;
+        }
+    }
+}
+
+@media(min-width: 998px){
+    .container-content__footer{
+       
+        button {
+            width: 56% !important;
+            height: 10%;
+            border-radius: 0.5rem;
+            position: fixed;
+            bottom: 4rem;
+        }
+    }
+}
+
+
+/////////////////////
+///// FILTER
+/////////////////////
+
+.container-filter {
+    display: flex!important;
+    flex-flow: column;
+    justify-content: space-between!important;
+    align-items: center;
+    width: 100%;
+
+    &__btn{
+        display: flex!important;
+        flex-flow: row nowrap!important;
+        width: 100%!important;
+        align-items: center!important;
+        justify-content: center;
+        margin: 1.5rem 0;
+    }  
+}
+
+@media(min-width: 500px){
+    .container-filter{
+        flex-flow: row!important;
+
+        &__released{
+            flex: 0 1 50%
+        }
+
+        &__btn{
+            flex: 0 1 50%;
+            justify-content: flex-end;
+        }
+    }
+}
+
+/////////////////////
+///// FORM TASK
+/////////////////////
+
+.formTask {
+    h3 {
+        text-align: center;
+    }
+
+    label {
+        font-weight: 500;
+    }
+
+    &-campo {
+        display: flex;
+        margin: 2rem 0;
+        flex-direction: column !important;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .error {
+        color: red;
+    }
+}
+
+/////////////////////
+///// LIST TASK
+/////////////////////
+
+.container-listTask {
+    overflow-y: auto !important;
+    height: 20% !important;
+}
+
+/////////////////////
+/////  TASK
+/////////////////////
+
+.container-task {
+    border: 1px solid $border-grey;
+    margin-bottom: 1rem;
+    padding: 1rem 0.2rem;
+
+    &__title {
+        h3 {
+            font-size: 1.5rem;
+            margin-left: 3rem !important;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 1rem;
+
+        .container-piker {
+            display: flex;
+            align-items: center;
+        }
+
+        .piker {
+            padding-right: 2rem !important;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .container-task{
+        padding: 2rem 5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .container-task{
+        padding: 2rem 8rem;
+    }
+}

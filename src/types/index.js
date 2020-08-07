@@ -1,0 +1,18 @@
+export const CREATE_TASK = "CREATE_TASK";
+export const CREATE_TASK_SUCCESS = "CREATE_TASK_SUCCESS";
+export const CREATE_TASK_ERROR = "CREATE_TASK_ERROR";
+
+export const GET_TASK = "GET_TASK";
+export const GET_TASK_SUCCESS = "GET_TASK_SUCCESS";
+export const GET_TASK_ERROR = "GET_TASK_ERROR";
+
+export const DELETE_TASK = "DELETE_TASK";
+
+export const EDIT_TASK = "EDIT_TASK";
+
+export const TASK_SELECT = "TASK_SELECT";
+export const TASK_DELETE_SELECT = "TASK_DELETE_SELECT";
+
+export const RELEASED_TASK = "RELEASED_TASK";
+
+export const FILTER_TASK = "FILTER_TASK";
