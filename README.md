@@ -9,9 +9,11 @@ script: yarn start
 # Server Config
 
 Install JSON Server
+
 npm install -g json-server
 
 Start JSON Server
+
 script: json-server --watch db.json --port 4000
 uri: URL: http://localhost:4000/
 
